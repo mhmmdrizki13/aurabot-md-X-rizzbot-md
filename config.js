@@ -37,17 +37,17 @@ global.eror = '「❗」Server ERROR!'
 
 //========Url Template Buttons=========//
 global.dtu = 'ɪɴꜱᴛᴀɢʀᴀᴍ'
-global.urlnya = "https://www.instagram.com/mas_.giyuu"
+global.urlnya = "https://www.instagram.com/muhammad_rizki1303"
 
 //============= callButtons =============//
 global.dtc = 'ᴄᴀʟʟ ᴏᴡɴᴇʀ'
-global.phn = '+62 813-9322-7036'
+global.phn = '+62 896-7718-4101'
 
 //============= Watermark Bot and Sticker =============//
-global.wm = '© AuraBot'
-global.author = '© AuraBot'
-global.packname ='RFIunknown'
-global.namabot = 'AuraBot'
+global.wm = '© RizzBot'
+global.author = '© RizzBot'
+global.packname ='idc.'
+global.namabot = 'RizzBot'
 
 //============= Games ================//
 global.benar = '_*Benar✅*_'
