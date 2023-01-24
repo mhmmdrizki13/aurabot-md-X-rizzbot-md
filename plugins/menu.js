@@ -174,815 +174,250 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       }
     })
     if (teks == '404') {
-     let judul = `${global.ucapan}, ${name}`.trim()
+     let judul = `┌─〔 Rizz Botttt 3 〕
+├ Hai, *${name}!*
+├ Uptime *${uptime}*
+├ Database *${totalreg}*
+└────`.trim()
       const sections = [
       {
-        title: 'List Menu ' + namabot,       
+        title: 'Donation' + namabot,       
         rows: [
-          { title: `Pemilik Bot[👨‍💻]`, 
-           "description": "Nomor Pemilik Bot (owner)",
-           rowId: `${_p} creator` },
-
-          { title: `Syarat Ketentuan dan Peraturan[📜]`, 
-           "description": "Harap membaca Peraturan demi kenyamanan kita bersama",
-           rowId: `${_p} rules` },
-
-          { title: `Group Official AuraBot[🎊] `, 
-           "description": "Gabung untuk mendapatkan informasi mengenai bot atau sekedar meramaikan",
-           rowId: `${_p} auragc` },
-
-          { title: 'Semua Perintah', 
-           "description": "Menu Semua Perintah",
-           rowId: `${_p}? all` },
-          
-          { title: 'Game',
-           "description": "Menu untuk Game",
-           rowId: `${_p}? game` },
-          
-          { title: 'XP', 
-           "description": "Menu untuk XP",
-           rowId: `${_p}? xp` },
-          
-          { title: 'Stiker',
-           "description": "Menu untuk Sticker",
-           rowId: `${_p}? stiker` },
-          
-          { title: 'Kerang Ajaib',
-           "description": "Puja kerang ajaib...",
-           rowId: `${_p}? kerangajaib` },
-          
-          { title: 'Quotes', 
-           "description": "Menu untuk Quotes",
-           rowId: `${_p}? quotes` },
-          
-          { title: 'Grup', 
-           "description": "Menu untuk Group",
-           rowId: `${_p}? grup` },
-          
-          { title: 'Premium',
-           "description": "Menu untuk Premium Users",
-           rowId: `${_p}? premium` },
-          
-          { title: 'Internet',
-           "description": "Menu untuk menjelajahi Internet...",
-           rowId: `${_p}? internet` },
-          
-          { title: 'Anonymous',
-           "description": "Menu untuk Anonymous Chat",
-           rowId: `${_p}? anonymous` },
-
-          { title: 'Menu Anime',
-           "description": "Menu untuk Wibu",
-           rowId: `${_p}? anime` },
-
-          { title: 'Menu NSFW',
-           "description": "Menu 18+",
-           rowId: `${_p}? nsfw` },
-          
-          { title: 'Nulis & Logo',
-           "description": "Menu untuk Nulis & Logo",
-           rowId: `${_p}? nulis` },
-          
-          { title: 'Downloader',
-           "description": "Menu Downloader",
-           rowId: `${_p}? downloader` },
-          
-          { title: 'Tools',
-           "description": "Menu untuk Tools",
-           rowId: `${_p}? tools` },
-          
-          { title: 'Fun',
-           "description": "Menu Hiburan",
-           rowId: `${_p}? fun`},
-          
-          { title: 'Database',
-           "description": "Menu untuk Database",
-           rowId: `${_p}? database` },
-          
-          { title: 'Vote & Absen',
-           "description": "Menu untuk Vote & Absen",
-           rowId: `${_p}? vote` },
-          
-          { title: "Islami",
-            "description": "Menu Islami",
-           rowId: `${_p}? quran` },
-          
-          { title: 'Pengubah Suara',
-           "description": "Menu Pengubah Suara",
-           rowId: `${_p}? audio` },
-
-          { title: 'Info',
-           "description": "Menu untuk Info",
-           rowId: `${_p}? info` },
-          
-          { title: 'Tanpa Kategori',
-           "description": "Menu Tanpa Kategori",
-           rowId: `${_p}? tanpakategori` },
-          
-          { title: 'Owner',
-           "description": "Menu Khusus Owner",
-           rowId: `${_p}? owner` },
-        ]
+          { title: `Donate`, 
+           "description": "Bantu RizzBot Tetap Hidup!",
+           rowId: `${_p} donate` },
+        
+          ]
       }
-    ]
+      ]
+      
       const listMessage = {
-      text: '
-⊱━━━ %me ━━━⊰
+      text: `${readMore}┌─〔 Utama 〕
+├ .afk <reason>
+├ .groupofficial
+├ .peraturan
+├ .menu
+├ .help
+├ .?
+├ .menu
+├ .help
+├ .?
+└────
 
-⌬ User information ⌬
- ⁃ Nama : *%name!*
- ⁃ Id : #GRKVTnh
- ⁃ Premium : Tidak
+┌─〔 Game 〕
+├ .family100
+├ .suitpvp @tag
+├ .suit @tag
+├ .angka <0-9>
+├ .tictactoe [nama room]
+├ .ttt [nama room]
+├ .tttexit [nama room]
+├ .asahotak
+├ .math <mode>
+├ .suitpvp @tag
+├ .suit @tag
+└────
 
-⌬ Bot information ⌬
- ⁃ Terdaftar : 662
- ⁃ Room Chat : 0
- ⁃ Total Fitur : 734+
- ⁃ 18 Jan 2023 | 16:33:51 WIB
-͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏
+┌─〔 Exp & Limit 〕
+├ .buy <number>
+├ .buyall
+├ .daily
+├ .claim
+├ .leaderboard <jumlah user>
+├ .lb <jumlah user>
+├ .my [@62XXXX]
+├ .profile
+├ .daftar <name>.<age>
+├ .register <name>.<age>
+├ .sn
+├ .unreg <SN|SERIAL NUMBER>
+├ .unregister <SN|SERIAL NUMBER>
+└────
 
-*MAIN MENU*
-   ╟ menu
-   ╟ nsfw
-   ╟ iklan
-   ╟ rules
-   ╟ owner
-   ╟ script
-   ╟ infobot
-   ╟ donasi
-   ╟ donate
-   ╟ jadibot
-   ╟ listjadibot
-   ╟ sewabot
-   ╟ groupbot
-   ╟ ownerinfo
-   ╙ infoowner
+┌─〔 Stiker 〕
+├ .wm <packname>|<author>
+├ .stickermeme <teks>|<teks>
+├ .stiker (caption|reply media)
+├ .stiker <url>
+├ .stikergif (caption|reply media)
+├ .stikergif <url>
+├ .toimg
+├ .stickertele <url>
+├ .togif
+├ .toimg
+└────
 
-*USER MENU*
-   ╟ verify
-   ╟ report
-   ╟ request
-   ╟ transfer
-   ╟ menfess
-   ╟ buatroom
-   ╟ secretchat
-   ╟ cekprem
-   ╟ premium
-   ╙ changename
+┌─〔 Kerang Ajaib 〕
+├ apakah <text>?
+├ .apakah <text>
+├ .benarkah <text>
+├ benarkah <text>?
+├ .bisakah <text>
+├ bisakah <text>?
+├ kapankah <teks>?
+├ .kapankah <text>
+├ .siapa <teks>
+├ .siapakah <teks>
+├ siapa <teks>?
+├ siapakah <teks>?
+└────
 
-*OWNER MENU*
-   ╟ error
-   ╟ clearerr
-   ╟ siaran
-   ╟ session
-   ╟ db
-   ╟ send
-   ╟ sendconn
-   ╟ sendmain
-   ╟ sendmenu
-   ╟ sendnsfw
-   ╟ senddblist
-   ╟ resetdb
-   ╟ runtime
-   ╟ setexif
-   ╟ setwm
-   ╟ setfooter
-   ╟ setppbot
-   ╟ addprem
-   ╟ delprem
-   ╟ bc
-   ╟ bctext
-   ╟ bcvideo
-   ╟ bcaudio
-   ╟ bcimage
-   ╙ broadcast
-   
+┌─〔 Quotes 〕
+├ .hacker
+├ .senja (Limit)
+└────
 
-*STORE MENU* 
-   ╟ kali 1 2
-   ╟ bagi 1 2
-   ╟ kurang 1 2
-   ╟ tambah 1 2
-   ╟ dellist key
-   ╟ addlist key@response
-   ╟ update key@response
-   ╟ done <reply orderan>
-   ╟ proses <reply orderan>
-   ╟ list <only group>
-   ╙ shop <only group>
- 
-*GROUP MENU*
-   ╟ fitnah
-   ╟ delete
-   ╟ revoke
-   ╟ tagall
-   ╟ hidetag
-   ╟ setdesc
-   ╟ linkgrup
-   ╟ infogroup
-   ╟ setppgrup
-   ╟ setnamegrup
-   ╟ group open
-   ╟ group close
-   ╟ antilink on
-   ╟ antilink off
-   ╟ welcome on
-   ╟ welcome off
-   ╟ tiktokauto on
-   ╟ tiktokauto off
-   ╟ ytauto on
-   ╟ ytauto off
-   ╟ kick @tag
-   ╟ demote @tag
-   ╙ promote @tag
- 
-*AUTODECT MENU*
-   ╟ sadcat
-   ╟ translate
-   ╟ stalkff
-   ╟ stalknpm
-   ╟ stalkgithub
-   ╟ balikhuruf
-   ╟ balikangka
-   ╟ besarkecil
-   ╙ bilangangka
+┌─〔 Grup 〕
+├ .on <opsi>
+├ .off <opsi>
+├ .add nomor,nomor (Limit)
+├ .+ nomor,nomor (Limit)
+├ .listadmin
+├ .demote @user
+├ .infogrup
+├ .grup <open/close>
+├ .hidetag [teks] (Limit)
+├ .pengumuman [teks] (Limit)
+├ .kick @user
+├ .linkgroup
+├ .promote @user
+├ .revoke
+├ .setbye <teks>
+├ .setwelcome <teks>
+├ .tagall <message>
+├ .ban
+├ .unban
+└────
 
-*INTERNET MENU*
-   ╟ tiktok
-   ╟ play
-   ╟ ytmp3
-   ╟ ytmp4 (deleted command)
-   ╟ pinterest
-   ╟ fb
-   ╟ lirik
-   ╟ steam
-   ╟ itunes
-   ╟ playmp3
-   ╟ playmp4
-   ╟ gitclone
-   ╟ mediafire
-   ╟ wikimedia
-   ╟ wikipedia
-   ╟ soundcloud
-   ╙ infogempa
+┌─〔 Premium 〕
+├ .delcmd <teks>  (Premium)
+├ .listcmd
+├ .setcmd <teks>  (Premium)
+└────
 
-*CONVERT MENU*
-   ╟ tts
-   ╟ ttp
-   ╟ ttp2
-   ╟ attp
-   ╟ attp2
-   ╟ tourl
-   ╟ upload
-   ╟ toimg
-   ╟ toimage
-   ╟ tomp3
-   ╟ toaudio
-   ╟ tomp4
-   ╟ tovideo
-   ╟ emojimix (api error)
-   ╟ emojmix (api error)
-   ╟ emojinua (api error)
-   ╟ mixemoji (api error)
-   ╟ stiker (error)
-   ╟ sticker(error)
-   ╟ sgif (api error)
-   ╟ stikergif (api error)
-   ╟ stickergif( api error)
-   ╟ swm ( api error)
-   ╟ stikerwm (api error)
-   ╟ stickerwm (api error)
-   ╟ smeme (api error)
-   ╟ memestiker (api error)
-   ╟ stikermeme (api error)
-   ╟ stickermeme (api error)
-   ╟ takesticker (api error)
-   ╟ emojinua2 (error)
-   ╟ mixemoji2(error)
-   ╟ emojmix2 (error)
-   ╙ emojimix2 (error)
+┌─〔 Internet 〕
+├ .ytsearch <query> (Limit)
+├ .meme
+├ .fetch <url>
+├ .get <url>
+├ .image <query>
+├ .google <pencarian>
+└────
 
-*TOOLS MENU*
-   ╟ spamcall
-   ╟ qrcode
-   ╟ mcskin
-   ╟ morse
-   ╟ binary
-   ╟ binary-translate
-   ╟ translate
-   ╟ ssweb
-   ╟ bitly_short
-   ╟ cuttly_short
-   ╟ tinyurl_short
-   ╟ base32
-   ╟ base64
-   ╟ debase32
-   ╙ debase64
+┌─〔 Anonymous Chat 〕
+├ .start
+├ .leave
+├ .sendkontak
+└────
 
-*VIRUS MENU*
-   ╟ sendbug 628xxx
-   ╟ philips 628xxx
-   ╟ philips2 628xxx
-   ╟ philips3 628xxx
-   ╟ santet @tag
-   ╟ santet2 @tag
-   ╟ santet3 @tag
-   ╟ virtex 628xxx
-   ╟ virtex2 628xxx
-   ╟ virtex3 628xxx
-   ╟ bug1 628xxx
-   ╟ bug2 628xxx
-   ╟ bug3 628xxx
-   ╟ bug4 628xxx
-   ╙ bug5 628xxx
- 
-*CEKRANDOM MENU* 
-   ╟ cekjelek
-   ╟ cekcantik
-   ╟ cekganteng
-   ╟ ceksad
-   ╟ cekharam
-   ╟ cekhalal
-   ╟ cekbego
-   ╟ cekanjing
-   ╟ cekbiadab
-   ╟ cekramah
-   ╟ ceksatir
-   ╟ cekmanis
-   ╟ cekpahit
-   ╟ cekhitam
-   ╟ cekrasis
-   ╟ cekbaik
-   ╟ cekjahat
-   ╟ cekkaya
-   ╟ cekmiskin
-   ╟ cekpintar
-   ╟ cekbodoh
-   ╟ cekimut
-   ╟ cekkocak
-   ╙ cekkadang
+┌─〔 Anime 〕
+└────
 
-*SERTIFIKAT MENU*
-   ╟ toloserti <nama>
-   ╟ badgirlserti <nama>
-   ╟ goodgirlserti <nama>
-   ╟ fuckgirlserti <nama>
-   ╙ bucinserti <nama>
- 
-*LOGO MENU*
-   ╟ joker ( error server )
-   ╟ digital ( error server )
-   ╟ nulis ( error server )
-   ╟ nulis2 ( error server )
-   ╟ quoteser ( error server )
-   ╟ quobucin ( error server )
-   ╟ rem ( error server )
-   ╟ girlneko ( error server )
-   ╟ sadboy ( error server )
-   ╟ kaneki ( error server )
-   ╙ lolimaker ( error server )
+┌─〔 MagerNulis & Logo 〕
+├ .nulis <teks> (Limit)
+└────
 
-*ANONYMOUS MENU*
-   ╟ buatroom 628xxx
-   ╟ room <only owner>
-   ╟ stopchat <only room>
-   ╙ menfess 628xx|bot|hai
+┌─〔 Downloader 〕
+├ .ig <url> (Limit)
+├ .tiktok <url> (Limit)
+├ .mp3 (Limit)
+├ .ytmp3 (Limit)
+├ .ytmp4 <query> (Limit)
+├ .tiktok <url> (Limit)
+└────
 
-*SOSMED MENU*
-   ╟ pricelist <layanan>
-   ╟ order <cara order>
-   ╟ like jumlah|target
-   ╟ view jumlah|target
-   ╟ follower jumlah|username
-   ╟ cekstatus <idtrx>
-   ╟ komisi <owner only>
-   ╙ tarikkomisi <owner only>
- 
-*VOKAL MENU* 
-   ╟ hilih <text>
-   ╟ halah <text>
-   ╟ huluh <text>
-   ╟ heleh <text>
-   ╙ holoh <text>
- 
-*RANDOM MENU* 
-   ╟ nenen
-   ╟ genjot
-   ╟ wangy
-   ╟ curhat
-   ╟ perkosa
-   ╟ cecan
-   ╟ cogan
-   ╟ mobil
-   ╟ islamic
-   ╟ darkjokes
-   ╟ boneka
-   ╟ wallhp
-   ╟ tatasurya
-   ╙ programing
+┌─〔 Tools 〕
+├ .base64 <teks>
+├ .ytsearch <query> (Limit)
+├ .reaction 😅
+├ .react 😅
+├ .say <teks>
+├ .ping
+├ .speed
+├ .readviewonce
+├ .q
+├ .font <text> (Limit)
+├ .styletext <text> (Limit)
+├ .getpp <@tag/reply>
+├ .igstalk <username> (Limit)
+├ .kalkulator <soal>
+├ .readmore <teks>|<teks>
+├ .ss <url>
+├ .ssweb <url>
+├ .harta <teks> (Limit)
+├ .translate <lang> <teks>
+├ .tourl <media>
+├ .translate <lang> <teks>
+├ .tts <lang> <teks>
+├ .tourl <media>
+└────
 
-*PRIMBON MENU* 
-   ╟ ramaljodoh
-   ╟ ramalanjodoh
-   ╟ nomorhoki
-   ╟ artimimpi
-   ╟ artinama
-   ╟ sifatusaha
-   ╟ tafsirmimpi
-   ╟ pasangan
-   ╟ suamiistri
-   ╟ ramalcinta
-   ╟ ramalancinta
-   ╟ ramaljodohbali
-   ╟ ramalanjodohbali
-   ╟ cocoknama
-   ╟ kecocokannama
-   ╟ cocokpasangan
-   ╙ kecocokanpasangan
+┌─〔 Fun 〕
+├ .alay
+├ .artinama [nama]
+├ .simi <teks>
+├ .simsimi <teks>
+├ .simih <teks>
+├ .getbio <@tag/reply>
+├ .getpp <@tag/reply>
+├ .dare (Limit)
+├ .truth (Limit)
+└────
 
-*GACHA MENU*
-   ╟ rika
-   ╟ bocil
-   ╟ ukhty
-   ╟ santuy
-   ╙ hijaber
+┌─〔 Database 〕
+├ .delcmd <teks>  (Premium)
+├ .infocmd <text>
+├ .listcmd
+├ .unlockcmd
+├ .lockcmd
+├ .setcmd <teks>  (Premium)
+└────
 
-*AUDIO CHANGER MENU*
-   ╟ fat
-   ╟ fast
-   ╟ slow
-   ╟ bass
-   ╟ deep
-   ╟ tupai
-   ╟ robot
-   ╟ blown
-   ╟ smooth
-   ╟ earrape
-   ╟ reverse
-   ╙ nightcore
+┌─〔 Voting 〕
+└────
 
-*INFOMATION MENU* 
-   ╟ gempa
-   ╟ jadwaltv
-   ╟ gempanow
-   ╟ bioskopnow
-   ╟ latintoaksara
-   ╙ aksaratolatin
+┌─〔 Absen 〕
+├ .absen
+├ .cekabsen
+├ .-absen
+├ .+absen [teks]
+└────
 
-*STICKER RANDOM MENU* 
-   ╟ dadu
-   ╟ anjing
-   ╟ patrick
-   ╟ bucinstick
-   ╟ gawrgura
-   ╙ amongus
+┌─〔 Al Qur'an 〕
+└────
 
-*AUDIO MENU* 
-   ╟ audio1
-   ╟ audio2
-   ╟ audio3
-   ╟ audio4
-   ╟ audio5
-   ╟ audio6
-   ╟ audio7
-   ╟ audio8
-   ╟ audio9
-   ╟ audio10
-   ╟ audio11
-   ╟ audio12
-   ╟ audio13
-   ╟ audio14
-   ╟ audio15
-   ╟ audio16
-   ╟ audio17
-   ╟ audio18
-   ╟ audio19
-   ╙ audio20
- 
-*CEK MENU* 
-   ╟ goblokcek 
-   ╟ jelekcek 
-   ╟ gaycek
-   ╟ lesbicek
-   ╟ gantengcek 
-   ╟ cantikcek
-   ╟ begocek 
-   ╟ suhucek
-   ╟ pintercek
-   ╟ jagocek
-   ╟ nolepcek
-   ╟ babicek
-   ╟ bebancek
-   ╟ baikcek
-   ╟ jahatcek
-   ╟ anjingcek
-   ╟ haramcek
-   ╟ pakboycek
-   ╟ pakgirlcek
-   ╟ sangecek 
-   ╟ bapercek
-   ╟ fakboycek
-   ╟ alimcek
-   ╟ suhucek
-   ╟ fakgirlcek
-   ╟ kerencek
-   ╙ wibucek
+┌─〔 Pengubah Suara 〕
+└────
 
-*WALLPAPER MENU* 
-   ╟ milf
-   ╟ loli
-   ╟ wallml
-   ╟ waifu
-   ╟ husbu
-   ╟ cosplay
-   ╟ ppcouple
-   ╟ wallpaperislami
-   ╟ wallpaperinori
-   ╟ wallpaperanime
-   ╟ wallpapergamer
-   ╟ wallpapermeme
-   ╟ wallpaperprogamer
-   ╟ wallpaperteknologi
-   ╙ wallpapercyber
+┌─〔 Nsfw 〕
+├ .milf
+├ .nuklir (Limit)
+├ .nsfwwaifu (Limit)
+└────
 
-*ANIME MENU* 
-   ╟ akira 
-   ╟ akiyama
-   ╟ anna 
-   ╟ asuna 
-   ╟ ayuzawa 
-   ╟ boruto 
-   ╟ chiho 
-   ╟ chitoge   
-   ╟ deidara 
-   ╟ eba 
-   ╟ elaina    
-   ╟ emilia 
-   ╟ erza 
-   ╟ gremory 
-   ╟ hestia 
-   ╟ hinata 
-   ╟ inori  
-   ╟ isuzu  
-   ╟ itachi    
-   ╟ itori  
-   ╟ kaga   
-   ╟ kagura  
-   ╟ kaori   
-   ╟ kaneki   
-   ╟ kotori  
-   ╟ kurumi  
-   ╟ madara 
-   ╟ megumin    
-   ╟ mikasa 
-   ╟ miku 
-   ╟ minato 
-   ╟ naruto  
-   ╟ nezuko  
-   ╟ onepiece 
-   ╟ rize   
-   ╟ sagiri     
-   ╟ sakura    
-   ╟ sasuke     
-   ╟ shina   
-   ╟ shinka    
-   ╟ shinomia   
-   ╟ shizuka 
-   ╟ tejina   
-   ╟ toukachan  
-   ╟ tsunade  
-   ╟ yotsuba 
-   ╟ yuki    
-   ╟ yumeko 
-   ╟ manga
-   ╟ characters
-   ╟ anime 
-   ╟ genres
-   ╟ genshin
-   ╟ cry
-   ╟ hug
-   ╟ pat
-   ╟ bully
-   ╟ lick
-   ╟ kiss
-   ╟ awoo
-   ╟ waifu
-   ╟ shinobu
-   ╟ cuddle
-   ╟ megumin
-   ╟ slap
-   ╟ neko
-   ╟ wink
-   ╟ dance
-   ╟ poke
-   ╟ glomp
-   ╟ bite
-   ╟ nom
-   ╟ handhold
-   ╟ highfive
-   ╟ wave
-   ╟ smug
-   ╟ smile
-   ╙ bonk
+┌─〔 Info 〕
+├ .owner
+├ .delete
+├ .stats
+├ .user
+├ .premlist [angka]
+├ .status
+├ .statusbot
+├ .totalfitur
+├ .runtime
+├ .report<text> (Limit)
+├ .request<text> (Limit)
+├ .sourcecode
+├ .ping
+├ .speed
+├ .speedtest
+└────
 
-*CERPEN MENU* 
-   ╟ cerpen-sejarah
-   ╟ cerpen-sedih
-   ╟ cerpen-sastra
-   ╟ cerpen-romantis
-   ╟ cerpen-rohani
-   ╟ cerpen-rindu
-   ╟ cerpen-remaja
-   ╟ cerpen-ramadhan
-   ╟ cerpen-petualangan
-   ╟ cerpen-persahabatan
-   ╟ cerpen-perpisahan
-   ╟ cerpen-perjuangan
-   ╟ cerpen-penyesalan
-   ╟ cerpen-pengorbanan
-   ╟ cerpen-pengalaman
-   ╟ cerpen-pendidikan
-   ╟ cerpen-penantian
-   ╟ cerpen-patahhati
-   ╟ cerpen-olahraga
-   ╟ cerpen-nasionalisme
-   ╟ cerpen-nasihat
-   ╟ cerpen-motivasi
-   ╟ cerpen-misteri
-   ╟ cerpen-mengharukan
-   ╟ cerpen-malaysia
-   ╟ cerpen-liburan
-   ╟ cerpen-kristen
-   ╟ cerpen-korea
-   ╟ cerpen-kisahnyata
-   ╟ cerpen-keluarga
-   ╟ cerpen-kehidupan
-   ╟ cerpen-jepang
-   ╟ cerpen-inspiratif
-   ╟ cerpen-gokil
-   ╟ cerpen-galau
-   ╟ cerpen-cintasejati
-   ╟ cerpen-cintasegitiga
-   ╟ cerpen-cintasedih
-   ╟ cerpen-cintaromantis
-   ╟ cerpen-cintapertama
-   ╟ cerpen-cintaislami
-   ╟ cerpen-cinta
-   ╟ cerpen-budaya
-   ╟ cerpen-bahasasunda
-   ╟ cerpen-bahasajawa
-   ╟ cerpen-bahasainggris
-   ╟ cerpen-bahasadaerah
-   ╙ cerpen-anak
-
-*SOUND MENU* 
-   ╟ sound1
-   ╟ sound2
-   ╟ sound3
-   ╟ sound4
-   ╟ sound5
-   ╟ sound6
-   ╟ sound7
-   ╟ sound8
-   ╟ sound9
-   ╟ sound10
-   ╟ sound11
-   ╟ sound12
-   ╟ sound13
-   ╟ sound14
-   ╟ sound15
-   ╟ sound16
-   ╟ sound17
-   ╟ sound18
-   ╟ sound19
-   ╟ sound20
-   ╟ sound21
-   ╟ sound22
-   ╟ sound23
-   ╟ sound24
-   ╟ sound25
-   ╟ sound26
-   ╟ sound27
-   ╟ sound28
-   ╟ sound29
-   ╟ sound30
-   ╟ sound31
-   ╟ sound32
-   ╟ sound33
-   ╟ sound34
-   ╟ sound35
-   ╟ sound36
-   ╟ sound37
-   ╟ sound38
-   ╟ sound39
-   ╟ sound40
-   ╟ sound41
-   ╟ sound42
-   ╟ sound43
-   ╟ sound44
-   ╟ sound45
-   ╟ sound46
-   ╟ sound47
-   ╟ sound48
-   ╟ sound49
-   ╟ sound50
-   ╟ sound51
-   ╟ sound52
-   ╟ sound53
-   ╟ sound54
-   ╟ sound55
-   ╟ sound56
-   ╟ sound57
-   ╟ sound58
-   ╟ sound59
-   ╟ sound60
-   ╟ sound61
-   ╟ sound62
-   ╟ sound63
-   ╟ sound64
-   ╟ sound65
-   ╟ sound66
-   ╟ sound67
-   ╟ sound68
-   ╟ sound69
-   ╟ sound70
-   ╟ sound71
-   ╟ sound72
-   ╟ sound73
-   ╙ sound74
-
-*TEXTPRO MENU* 
-   ╟ metallic text
-   ╟ naruto text
-   ╟ butterfly text
-   ╟ flaming text
-   ╟ shadow text
-   ╟ cup text
-   ╟ cup1 text
-   ╟ romance text
-   ╟ smoke text
-   ╟ burnpaper text
-   ╟ lovemessage text
-   ╟ undergrass text
-   ╟ love text
-   ╟ coffe text
-   ╟ woodheart text
-   ╟ woodenboard text
-   ╟ summer3d text
-   ╟ wolfmetal text
-   ╟ nature3d text
-   ╟ underwater text
-   ╟ goldenrose text
-   ╟ summernature text
-   ╟ letterleaves text
-   ╟ glowingneon text
-   ╟ fallleaves text
-   ╟ flamming text
-   ╟ harrypotter text
-   ╟ carvedwood text
-   ╟ tiktok text1 text2
-   ╟ arcade8bit text1 text2
-   ╟ battlefield4 text1 text2
-   ╙ pubg text1 text2
-
-*EPHOTO MENU* 
-   ╟ wetglass text
-   ╟ multicolor3d text
-   ╟ watercolor text
-   ╟ luxurygold text
-   ╟ galaxywallpaper text
-   ╟ lighttext text
-   ╟ beautifulflower text
-   ╟ puppycute text
-   ╟ royaltext text
-   ╟ heartshaped text
-   ╟ birthdaycake text
-   ╟ galaxystyle text
-   ╟ hologram3d text
-   ╟ greenneon text
-   ╟ glossychrome text
-   ╟ greenbush text
-   ╟ metallogo text
-   ╟ noeltext text
-   ╟ glittergold text
-   ╟ textcake text
-   ╟ starsnight text
-   ╟ wooden3d text
-   ╟ textbyname text
-   ╟ writegalacy text
-   ╟ galaxybat text
-   ╟ snow3d text
-   ╟ birthdayday text
-   ╟ goldplaybutton text
-   ╟ silverplaybutton text
-   ╙ freefire text
-
-*NSFW MENU* 
-   ╙ nsfw
- 
-Bot @⁨Ichika 💠⁩',
-      footer: "Silahkan tekan tombol \"Click Here\" untuk melihat sub-menu AuraBot.\n\nJika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
-      mentions: await conn.parseMention(judul),
+┌─〔 Tanpa Kategori 〕
+└────
+*© RizzBot*
+      `,
+      mention: await conn.parseMention(judul),
       title: judul,
       buttonText: "Click Here",
       sections
